@@ -1,0 +1,113 @@
+html { 
+	height: 100%;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: $font_content;
+	color: $color_body_copy;
+}
+
+body {
+	//height: 100%;
+	margin: 0;
+	font-size: $size_base;
+	line-height: 1.4;
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* ==========================================================================
+	Links
+/* ========================================================================== */
+a {
+	color: $color_link;
+	text-decoration: underline;
+	@include transition(color .2s ease);
+}
+a:focus,
+a:hover {
+	color: darken($color_link, 25%);
+}
+a:focus {
+	outline: thin dotted;
+}
+a:active,
+a:hover {
+	outline: 0;
+}
+
+
+/* ==========================================================================
+	Typography
+/* ========================================================================== */
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 $size_base;
+	line-height: $size_base * 1.5;
+	font-weight: 800;
+}
+h1 {
+	font-size: $size_base * 2;
+}
+h2 {
+	font-size: $size_base * 1.5;
+}
+h3 {
+	font-size: $size_base * 1.3;
+}
+h4 {
+	font-size: $size_base * 1.3;
+}
+h5, h6 {
+	font-size: $size_base * 1.1;
+}
+
+/* Content Block Elements */
+dl,
+menu,
+ol,
+ul,
+p,
+pre {
+	margin: 0 0 $size_base;
+}
+
+/* Paragraphs */
+p {
+
+}
+
+/* Lists */
+menu,
+ol,
+ul {
+	padding: 0 0 0 $size_base * 2;
+}
+
+/* Selection Colors */
+::-moz-selection {
+	background: #FFF;
+	color: $color_main;
+	text-shadow: none;
+}
+::selection {
+	background: #FFF;
+	color: $color_main;
+	text-shadow: none;
+}

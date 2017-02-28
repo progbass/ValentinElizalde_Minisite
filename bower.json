@@ -1,0 +1,13 @@
+{
+  "name": "YeoPress-Template",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.9.0",
+    "requirejs": "~2.1.5",
+    "almond": "https://github.com/requirejs/almond.git#^0.3.3",
+    "ResponsiveSlides.js": "https://github.com/viljamis/ResponsiveSlides.js.git"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.7"
+  }
+}

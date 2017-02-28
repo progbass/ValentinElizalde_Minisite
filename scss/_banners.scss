@@ -1,0 +1,56 @@
+
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////   BANNERS   /////////////////////////////
+/////////////////////////////////////////////////////////////////////
+.banners_module{
+  text-align: center;
+  margin: 2px auto;
+
+  .wrapper_container{
+  	padding: 0;
+  }
+
+  .banner{
+  	display: none;
+  }
+
+  .box.banner{
+  	display: block;
+  }
+
+
+  ///////////////////////////////////////
+  // MEDIA QUERIES
+  ///////////////////////////////////////
+  @media screen and (max-width: 320px){
+    margin-left: -15px; margin-right: -15px;
+
+    img{
+      width: 100%;
+      height: auto
+    }
+  }
+
+  @media screen and (min-width: 728px){
+  	.box.banner{ display: none; }
+  	.billboard.banner{ display: none; }
+    .super.banner{
+  		display: block;
+
+      img{
+        width: 100%;
+        height: auto
+      }
+  	}
+  }
+
+  @media screen and (min-width: 960px){
+    .box.banner{ display: none; }
+  	.super.banner{ display: none; }
+    .billboard.banner{ display: block; }
+  }
+}
+
+
+
